@@ -7,14 +7,46 @@
 </head>
 <body>
     <form action="">
-        Enter your name 
-        <input type="text" placeholder="Username">
+        <fieldset>
+            <legend>Personal Detail</legend>
+        <label for="name">Enter your name </label>
+        <br> 
+        <input type="text" placeholder="Username" name="name">
         <br>
-        Enter your age 
-        <input type="number" placeholder="age">
+        <label for="age">Enter your age </label>
         <br>
-        <input type="submit" >
-        <input type="reset" aria-colcount="black">
+        <input type="number" name="age" placeholder="Enter your age" required>
+        <br>
+        <label for="Mobile">Enter your mobile number </label>
+        <br>
+        <input type="number" name="mobile" placeholder="Enter your mobile number ">
+        <br>
+        <label for="female">Male</label>
+        <input type="radio" name="gender" value="female" >
+        <label for="male">Female</label>
+        <input type="radio" name="gender" value="male" >
+        <br>
+        <label for="e-mail">Enter your e-mail</label>
+        <br>
+        <input type="email" name="e-mail" placeholder="Enter your e-mail ">
+        <br>
+    </fieldset>
+    <br>
+        <label for="file"></label>S
+        <input type="file" name="file" placeholder="choose file">
+        <br>
+
+        <Select name="Cars">
+            <option value="BMW">BMW</option>
+            <option value="TOYOTA">TOYOTA</option>
+            <option value="Audi">Audi</option>
+        </Select>
+        <label for="Personal_details">Personal_details</label>
+        <br>
+        <input type="text" name="Personal_details" placeholder="Write about yourself">
+        <br>
+        <input type="submit" ><br>
+        <input type="reset">
     </form>
 </body>
 </html>
